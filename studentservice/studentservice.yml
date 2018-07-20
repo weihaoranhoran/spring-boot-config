@@ -3,10 +3,14 @@ spring:
     name: student-service
 
 server:
-  port: 8098    
+  port: 8097    
 
   
 management:
   security:
     enabled: false
 
+spring:
+  h2:
+    console:
+      enabled: true
