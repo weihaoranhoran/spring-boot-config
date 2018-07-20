@@ -27,37 +27,18 @@ logging:
   level:
     com.example.howtodoinjava: DEBUG
     
-spring:
-  h2:
-    console:
-      enabled:true
-
-spring:
-  h2:
-    console:
-      path:/h2_console
 
 spring:
   datasource:
-    url:jdbc:h2:file:~/h2/testdb
-
-spring:
-  datasource:
-    username:sa
-
-spring:
-  datasource:
-    password:
-
-spring:
-  datasource:
-  driverClassName:org.h2.Driver
-
-spring:
+    password: 
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:file:~/h2/testdb
+    username: sa
   jpa:
+    show-sql: true
     hibernate:
-      ddl-auto:update
-
-spring:
-  jpa:
-    show-sql:true
+      ddl-auto: update
+  h2:
+    console:
+      path: /h2_console
+      enabled: true
