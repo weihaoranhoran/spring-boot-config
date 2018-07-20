@@ -1,5 +1,5 @@
 server:
-  port: 8098
+  port: 8097
 
 eureka:
   instance:
@@ -26,3 +26,12 @@ management:
 logging:
   level:
     com.example.howtodoinjava: DEBUG
+    
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2_console
+spring.datasource.url=jdbc:h2:file:~/h2/testdb
+spring.datasource.username=sa
+spring.datasource.password=
+spring.datasource.driverClassName=org.h2.Driver
+spring.jpa.hibernate.ddl-auto = update
+spring.jpa.show-sql=true
